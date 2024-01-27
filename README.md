@@ -5,7 +5,6 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://github.com/nsourlos/automatic_bird_detection_in_ancient_manuscripts)
 
 > This tool is used to detect birds in ancient manuscripts. There are two different approaches:
