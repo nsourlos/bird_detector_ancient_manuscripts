@@ -8,7 +8,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://github.com/nsourlos/automatic_bird_detection_in_ancient_manuscripts)
 
 > This tool is used to detect birds in ancient manuscripts. There are two different approaches:
-1. Using [**Llava**](https://llava-vl.github.io/) (Large Language Model with vision), as in the file [llava_imgs_tcli.py](./llava_imgs_tcli.py).
+1. Using [**Llava**](https://llava-vl.github.io/) (Large Language Model with vision), as in the file [llava_imgs_tcli.py](./llava_imgs_tcli.py). A newest and a more general implementation can be found in the file [llava_bird_detector_automated.py](./llava_bird_detector_automated.py).
 2. Using [**GroundingDINO**](https://github.com/IDEA-Research/GroundingDINO), a state of the art object detector, as in the file [groundingdino_birds.py](./groundingdino_birds.py)
 
 The second method is the one we prefer due to being faster, allowing us to modify the detection threshold, and having better Negative Predictive Value (NPV). By using it we can exclude all images without birds, and therefore save time from manually checking all images in a manuscript. Both methods have a lot of extra FPs.
@@ -123,6 +123,9 @@ Key Variables:
 - `all_paths`: A list of paths for each image in all_imgs.
 - `commands`: A list of commands to be executed. In this case, it's a command to run the `tcli` module of the `llava.serve` package with specified model path and load-4bit option.
 
+# [llava_bird_detector_automated.py](./llava_bird_detector_automated.py)
+
+A newest implementation of the above script that can be easily generalized to any task other than detection. With this, we can ask any question related to the image to the LLM
 
 # [pdf_extract_imgs.py](./pdf_extract_imgs.py)
 
